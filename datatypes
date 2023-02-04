@@ -1,0 +1,34 @@
+// data type , size using sizeof() function  , and type of datatype  using typeid().name() fuction . 
+
+
+#include<iostream>
+#include<typeinfo>   // for using typeid().name() function.
+using namespace std;
+int main(){
+    int a =12;
+    cout<<"type of a is "<<typeid(a).name()<<endl;
+    cout<<"size of int is "<<sizeof(a)<<endl ;
+    
+
+    float f =1.234;
+    cout<<"type of " <<typeid(f).name()<<endl;
+    cout<<"size of float is"<<sizeof(f)<<endl;
+
+    long l = 12342342;
+    cout<<"type of l " <<typeid(l).name()<<endl;
+    cout<<"size of long is "<<sizeof(l)<<endl;
+
+    double d = 23.21234333345433;
+    cout<<"type of d "<<typeid(d).name()<<endl;
+    cout<<"size of double is "<<sizeof(d)<<endl;
+
+    bool bl = true ;
+    cout<<"type of bl"<<typeid(bl).name()<<endl;
+    cout<<"size of the bool is "<< sizeof(bl)<<endl;
+
+    char ch ='v';
+    cout<<"type of ch " <<typeid(ch).name()<<endl;
+    cout<<"size of the char is "<< sizeof(ch)<<endl;
+    
+    return 0;
+}
